@@ -1,0 +1,103 @@
+---
+
+---
+
+<div class="carousel">
+  <div class="carousel__project">
+    <img
+      src="https://www.frontendmentor.io/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdz209s6jk%2Fimage%2Fupload%2Fv1564914816%2FChallenges%2Ftjmihf4uv326gkkz7mbk.jpg&w=384&q=75"
+      alt="image showing the project"
+    />
+    <h3>Project 1</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+      voluptatum.
+    </p>
+  </div>
+  <div class="carousel__project">
+    <img
+      src="https://www.frontendmentor.io/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdz209s6jk%2Fimage%2Fupload%2Fv1652196092%2FChallenges%2Fbnjpxmx9fudsmerfj6eo.jpg&w=384&q=75"
+      alt="image showing the project"
+    />
+    <h3>Project 2</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+      voluptatum.
+    </p>
+  </div>
+  <div class="carousel__project">
+    <img
+      src="https://www.frontendmentor.io/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdz209s6jk%2Fimage%2Fupload%2Fv1554894929%2FChallenges%2Fqjiprcu1e19yvujjrflv.jpg&w=384&q=75"
+      alt="image showing the project"
+    />
+    <h3>Project 3</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+      voluptatum.
+    </p>
+  </div>
+  <button class="prev" aria-label="previous item on the carousel">left</button>
+  <button class="next" aria-label="next item on the carousel">right</button>
+  <div class="text-center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("carousel__project");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+
+  function prevSlide() {
+    plusSlides(-1);
+  }
+
+  function nextSlide() {
+    plusSlides(1);
+  }
+
+  function selectSlide(n) {
+    currentSlide(n);
+  }
+
+  const prevButton = document.querySelector(".prev");
+  prevButton.addEventListener("click", prevSlide);
+
+  const nextButton = document.querySelector(".next");
+  nextButton.addEventListener("click", nextSlide);
+
+  const dots = document.querySelectorAll(".dot");
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      selectSlide(index + 1);
+    });
+  });
+</script>
