@@ -1,11 +1,10 @@
 ---
 import GridCell from "../layouts/GridCell.astro";
+const technologies = ["React", "JavaScript", "TypeScript", "Tailwind"];
 ---
 
 <GridCell>
   <ul>
-    <li>placeholder</li>
-    <li>placeholder</li>
-    <li>placeholder</li>
+    {technologies.map((tech) => <li>{tech}</li>)}
   </ul>
 </GridCell>
