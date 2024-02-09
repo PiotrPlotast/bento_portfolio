@@ -10,7 +10,19 @@ export default {
       fontFamily: {
         main: ["'Baloo 2'", "sans-serif"],
       },
+      gridTemplateAreas: {
+        layout: [
+          "hero hero hero aboutMe",
+          "technologies projects projects contactMe",
+        ],
+      },
+      gridTemplateColumns: {
+        layout: "24rem 1fr 2rem",
+      },
+      gridTemplateRows: {
+        layout: "6rem 3rem 1fr auto",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@savvywombat/tailwindcss-grid-areas")],
 };

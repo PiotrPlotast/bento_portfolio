@@ -6,10 +6,29 @@ import Projects from "../components/Projects.astro";
 import ContactMe from "../components/ContactMe.astro";
 ---
 
-<main class="grid gap-4 mx-8">
-  <Hero />
-  <AboutMe />
-  <Technologies />
-  <Projects />
-  <ContactMe />
+<style>
+  main {
+    display: grid;
+    grid-template-areas:
+      "hero hero hero aboutMe"
+      "technologies projects projects contactMe";
+  }
+</style>
+
+<main class="gap-4 mx-8">
+  <article class="hero grid-in-hero">
+    <Hero />
+  </article>
+  <article class="aboutMe grid-in-aboutMe">
+    <AboutMe />
+  </article>
+  <article class="technologies grid-in-technologies">
+    <Technologies />
+  </article>
+  <article class="projects grid-in-projects">
+    <Projects />
+  </article>
+  <article class="contactMe grid-in-contactMe">
+    <ContactMe />
+  </article>
 </main>
