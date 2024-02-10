@@ -1,7 +1,21 @@
 ---
-const technologies = ["React", "JavaScript", "TypeScript", "Tailwind"];
+const technologies = [
+  { name: "React", img: "/brand-react.svg" },
+  { name: "Next.js", img: "brand-nextjs.svg" },
+  { name: "Node.js", img: "brand-nodejs.svg" },
+  { name: "GraphQL", img: "brand-graphql.svg" },
+  { name: "JavaScript", img: "brand-javascript.svg" },
+  { name: "TypeScript", img: "brand-typescript.svg" },
+  { name: "Tailwind", img: "brand-tailwind.svg" },
+];
 ---
 
 <ul>
-  {technologies.map((tech) => <li>{tech}</li>)}
+  {
+    technologies.map((tech) => (
+      <li>
+        <span>{tech.name}</span> <img src={tech.img} alt="" />
+      </li>
+    ))
+  }
 </ul>
