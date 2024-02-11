@@ -13,6 +13,7 @@ export default {
       gridTemplateAreas: {
         layout: [
           "hero hero hero aboutMe",
+          "technologies projects projects aboutMe",
           "technologies projects projects contactMe",
         ],
       },
