@@ -1,5 +1,6 @@
 ---
-import Projects from "./Projects.astro";
+import GithubLink from "./GithubLink.astro";
+import LivePreviewLink from "./LivePreviewLink.astro";
 const projects = [
   {
     image:
@@ -7,6 +8,8 @@ const projects = [
     title: "Project 1",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    repository: "https://github.com/PiotrPlotast",
+    livePreview: "https://www.google.com",
   },
   {
     image:
@@ -14,6 +17,8 @@ const projects = [
     title: "Project 2",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    repository: "",
+    livePreview: "",
   },
   {
     image:
@@ -21,6 +26,8 @@ const projects = [
     title: "Project 3",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    repository: "",
+    livePreview: "",
   },
 ];
 ---
@@ -29,9 +36,17 @@ const projects = [
   {
     projects.map((project, index) => (
       <div class="carousel__project">
-        <img src={project.image} alt="image showing the project" />
+        <img
+          src={project.image}
+          alt="image showing the project"
+          class="object-cover mx-auto rounded-lg shadow-lg"
+        />
         <h3 class="text-center py-4 font-bold text-xl">{project.title}</h3>
         <p class="text-center">{project.description}</p>
+        <div class="flex justify-around">
+          <GithubLink repository={project.repository} />
+          <LivePreviewLink livePreview={project.livePreview} />
+        </div>
       </div>
     ))
   }
@@ -83,10 +98,10 @@ const projects = [
       slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" bg-blue-500", "");
+      dots[i].className = dots[i].className.replace(" !bg-blue-500", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " bg-blue-500";
+    dots[slideIndex - 1].className += " !bg-blue-500";
   }
 
   function prevSlide() {
