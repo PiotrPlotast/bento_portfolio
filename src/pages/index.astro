@@ -1,5 +1,4 @@
 ---
-import Header from "../components/Header.astro";
 import BentoGrid from "../layouts/BentoGrid.astro";
 ---
 
@@ -15,7 +14,9 @@ import BentoGrid from "../layouts/BentoGrid.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Pietrell's Portfolio</title>
   </head>
-  <body class="bg-mainBg text-white font-main mb-8">
+  <body
+    class="bg-mainBg text-white font-main mb-8 lg:mb-0 lg:h-[100vh] lg:flex lg:items-center"
+  >
     <BentoGrid />
   </body>
 </html>
