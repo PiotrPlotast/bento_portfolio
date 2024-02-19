@@ -4,8 +4,8 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
-import { Card, CardContent } from "@/components/ui/card"
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 import { Github, MonitorSmartphone } from "lucide-react";
 
 const projects = [
@@ -39,7 +39,7 @@ const projects = [
 ];
 
 export default function CarouselProjects() {
-	return (
+  return (
     <Carousel Carousel className="w-fit max-w-xs mx-auto my-4">
       <CarouselContent>
         {projects.map((project) => (
@@ -50,11 +50,17 @@ export default function CarouselProjects() {
                 alt="image showing the project"
                 className="object-cover mx-auto rounded-lg shadow-lg"
               />
-              <h3 className="text-center py-4 font-bold text-xl">{project.title}</h3>
+              <h3 className="text-center py-4 font-bold text-xl">
+                {project.title}
+              </h3>
               <p className="text-center">{project.description}</p>
               <div className="flex justify-around my-4">
-                <a href={project.repository}><Github /></a>
-                <a href={project.livePreview}><MonitorSmartphone /></a>
+                <a href={project.repository}>
+                  <Github />
+                </a>
+                <a href={project.livePreview}>
+                  <MonitorSmartphone />
+                </a>
               </div>
             </div>
           </CarouselItem>
@@ -63,5 +69,5 @@ export default function CarouselProjects() {
       <CarouselPrevious className="top-32" />
       <CarouselNext className="top-32" />
     </Carousel>
-	)
+  );
 }
