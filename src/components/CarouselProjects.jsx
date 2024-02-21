@@ -44,11 +44,11 @@ export default function CarouselProjects() {
       <CarouselContent>
         {projects.map((project) => (
           <CarouselItem key={project.title}>
-            <div className="">
+            <div className=" md:max-w-96 mx-auto">
               <img
                 src={project.image}
                 alt="image showing the project"
-                className="object-cover mx-auto rounded-lg shadow-lg"
+                className="mx-auto max-w-[90%] rounded-lg shadow-lg"
               />
               <h3 className="text-center py-4 font-bold text-xl">
                 {project.title}
