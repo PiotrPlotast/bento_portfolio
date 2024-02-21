@@ -10,6 +10,9 @@ export default {
       },
     },
     extend: {
+      screens: {
+        lg: "1178px",
+      },
       colors: {
         gridCell: "#191C26",
         mainBg: "#12151d",
