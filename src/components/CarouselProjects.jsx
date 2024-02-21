@@ -40,11 +40,11 @@ const projects = [
 
 export default function CarouselProjects() {
   return (
-    <Carousel className="max-w-full  mx-auto my-4">
+    <Carousel className="mx-auto my-4">
       <CarouselContent>
         {projects.map((project) => (
           <CarouselItem key={project.title}>
-            <div className=" md:max-w-96 mx-auto">
+            <div className="md:max-w-96 2xl:max-w-[35rem] mx-auto">
               <img
                 src={project.image}
                 alt="image showing the project"
