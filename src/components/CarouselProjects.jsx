@@ -20,7 +20,7 @@ const projects = [
   },
   {
     image:
-      "https://private-user-images.githubusercontent.com/89207478/296444055-30f4e74c-ace2-4b0d-87f0-70fb7a45fab4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg1MzIwNzgsIm5iZiI6MTcwODUzMTc3OCwicGF0aCI6Ii84OTIwNzQ3OC8yOTY0NDQwNTUtMzBmNGU3NGMtYWNlMi00YjBkLTg3ZjAtNzBmYjdhNDVmYWI0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjIxVDE2MDkzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ2NjY4NTliNGQzYzViNTdmOGNhNWM0ZjViNmYzNDE0MmRiMWU1NzE0NDgyN2FiOTk1OTRmNTUyOGU1NWIyMWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.V1avLmGSWLUmgKIgTG9y3i369g8yTWEWUu50NA4S-ko",
+      "https://i.ibb.co/dmNdNqR/296444055-30f4e74c-ace2-4b0d-87f0-70fb7a45fab4.png",
     title: "Interactive Eisenhower Matrix",
     description:
       "Interactive Eisenhower Matrix is a web app in which you can categorize, manage and save your tasks between sessions.",
