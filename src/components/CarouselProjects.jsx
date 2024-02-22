@@ -5,6 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay"
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, MonitorSmartphone } from "lucide-react";
 
@@ -40,7 +41,17 @@ const projects = [
 
 export default function CarouselProjects() {
   return (
-    <Carousel className="mx-auto my-4">
+    <Carousel
+    plugins={[
+      Autoplay({
+        delay: 2000,
+      }),
+    ]}
+    opts={{
+      align: "start",
+      loop: true,
+    }}
+    className="mx-auto my-4">
       <CarouselContent>
         {projects.map((project) => (
           <CarouselItem key={project.title}>
@@ -66,8 +77,8 @@ export default function CarouselProjects() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      {/* <CarouselPrevious className=" top-1/2 sm:scale-150" /> */}
-      {/* <CarouselNext className="top-1/2 sm:scale-150" /> */}
+      {/* <CarouselPrevious className=" top-1/2 hidden sm:scale-150 sm:flex " /> */}
+      {/* <CarouselNext className="top-1/2 hidden sm:scale-150 sm:flex" /> */}
     </Carousel>
   );
 }
