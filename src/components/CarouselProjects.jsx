@@ -44,7 +44,7 @@ export default function CarouselProjects() {
       <CarouselContent>
         {projects.map((project) => (
           <CarouselItem key={project.title}>
-            <div className="md:max-w-96 2xl:max-w-[35rem] mx-auto">
+            <div className="max-w-[35rem] mx-auto">
               <img
                 src={project.image}
                 alt="image showing the project"
