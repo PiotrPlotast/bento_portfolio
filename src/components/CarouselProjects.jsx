@@ -64,12 +64,12 @@ export default function CarouselProjects() {
               <h3 className="text-center py-4 font-bold text-xl">
                 {project.title}
               </h3>
-              <p className="text-center">{project.description}</p>
+              <p className="text-center" >{project.description}</p>
               <div className="flex justify-around my-4">
-                <a href={project.repository}>
+                <a href={project.repository} aria-label="link to project's repository">
                   <Github />
                 </a>
-                <a href={project.livePreview}>
+                <a href={project.livePreview} aria-label="link to project's live preview">
                   <MonitorSmartphone />
                 </a>
               </div>
