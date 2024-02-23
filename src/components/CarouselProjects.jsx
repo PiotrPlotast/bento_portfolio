@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay"
+import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, MonitorSmartphone } from "lucide-react";
 
@@ -26,32 +26,35 @@ const projects = [
     description:
       "Interactive Eisenhower Matrix is a web app in which you can categorize, manage and save your tasks between sessions.",
     repository: "https://github.com/PiotrPlotast/interactive-eisenhower-matrix",
-    livePreview: "https://piotrplotast.github.io/interactive-eisenhower-matrix/",
+    livePreview:
+      "https://piotrplotast.github.io/interactive-eisenhower-matrix/",
   },
   {
     image:
       "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/wwrbx1zs3x2wiferhyaw.jpg",
     title: "(WIP) Typemaster pre launch landing page",
-    description:
-      "Typemaster pre launch landing page frontend mentor project.",
-    repository: "https://github.com/PiotrPlotast/typemaster-pre-launch-landing-page",
-    livePreview: "https://piotrplotast.github.io/typemaster-pre-launch-landing-page/",
+    description: "Typemaster pre launch landing page frontend mentor project.",
+    repository:
+      "https://github.com/PiotrPlotast/typemaster-pre-launch-landing-page",
+    livePreview:
+      "https://piotrplotast.github.io/typemaster-pre-launch-landing-page/",
   },
 ];
 
 export default function CarouselProjects() {
   return (
     <Carousel
-    plugins={[
-      Autoplay({
-        delay: 2000,
-      }),
-    ]}
-    opts={{
-      align: "start",
-      loop: true,
-    }}
-    className="mx-auto my-4">
+      plugins={[
+        Autoplay({
+          delay: 5000,
+        }),
+      ]}
+      opts={{
+        align: "start",
+        loop: true,
+      }}
+      className="mx-auto my-4"
+    >
       <CarouselContent>
         {projects.map((project) => (
           <CarouselItem key={project.title}>
@@ -64,12 +67,18 @@ export default function CarouselProjects() {
               <h3 className="text-center py-4 font-bold text-xl">
                 {project.title}
               </h3>
-              <p className="text-center" >{project.description}</p>
+              <p className="text-center">{project.description}</p>
               <div className="flex justify-around my-4">
-                <a href={project.repository} aria-label="link to project's repository">
+                <a
+                  href={project.repository}
+                  aria-label="link to project's repository"
+                >
                   <Github />
                 </a>
-                <a href={project.livePreview} aria-label="link to project's live preview">
+                <a
+                  href={project.livePreview}
+                  aria-label="link to project's live preview"
+                >
                   <MonitorSmartphone />
                 </a>
               </div>
