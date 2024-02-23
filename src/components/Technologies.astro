@@ -1,9 +1,9 @@
 ---
 
----
+--- 
 
 <h2 class="text-2xl text-center pb-4 font-bold">Technologies I know:</h2>
-<ul class="grid gap-4">
+<ul id="tecnologies-div" class="grid gap-4 lg:!max-h-[470px] lg:overflow-y-scroll lg:-mr-2 custom-scrollbar">
   <li class="bg-mainBg p-2 rounded-lg flex items-center lg:pr-16">
     <span class="px-4">
       <svg
@@ -175,3 +175,25 @@
     </span>
   </li>
 </ul>
+
+<style>
+  .custom-scrollbar {
+    scrollbar-gutter: auto;
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #ffffff6f;
+    border-radius: 5px;
+  }
+</style>
+
+<script>
+  const element = document.getElementById("tecnologies-div");
+  const isScrollbarVisible = element.scrollHeight > element.clientHeight;
+  if (isScrollbarVisible) {
+    element.style.paddingRight = '8px';
+  }
+</script>
