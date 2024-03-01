@@ -16,5 +16,4 @@ Page live at: https://pietrell.tech/
 - Tailwind
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+![image](https://github.com/PiotrPlotast/bento_portfolio/assets/89207478/b18eb872-d68f-4b51-a3e9-611c13106730)
