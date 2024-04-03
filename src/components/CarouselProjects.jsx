@@ -12,6 +12,15 @@ import { Github, MonitorSmartphone } from "lucide-react";
 const projects = [
   {
     image:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/vccuroyji9nqbuffdch6.jpg",
+    title: "Dictionary web app",
+    description:
+      "Dictionary web app - frontend mentor project made with React + Tailwindcss.",
+    repository: "https://github.com/PiotrPlotast/dictionary-web-app",
+    livePreview: "https://piotrplotast.github.io/dictionary-web-app/",
+  },
+  {
+    image:
       "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/xiydlw7ggmnfnldlflit.jpg",
     title: "Clipboard landing page",
     description:
