@@ -79,12 +79,14 @@ export default function CarouselProjects() {
               <p className="text-center">{project.description}</p>
               <div className="flex justify-around my-4">
                 <a
+                  target="blank"
                   href={project.repository}
                   aria-label="link to project's repository"
                 >
                   <Github />
                 </a>
                 <a
+                  target="blank"
                   href={project.livePreview}
                   aria-label="link to project's live preview"
                 >
