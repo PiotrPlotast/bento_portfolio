@@ -7,7 +7,7 @@
 # Bento Portfolio
 My Personal Portfolio Page. 
 
-Page live at: https://pietrell.tech/
+Page live at: https://bento-portfolio-eta.vercel.app/
 
 ## Built with
 
