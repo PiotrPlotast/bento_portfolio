@@ -6,43 +6,38 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { Card, CardContent } from "@/components/ui/card";
 import { Github, MonitorSmartphone } from "lucide-react";
 
 const projects = [
   {
     image:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/imk15xu66g4awbsylgsi.jpg",
+    title: "Markdown editor web app",
+    description: "Markdown editor web app made with React.",
+    repository: "https://github.com/PiotrPlotast/markdown-editor-web-app",
+    livePreview: "https://markdown-editor-web-app.vercel.app/",
+  },
+  {
+    image:
       "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/vccuroyji9nqbuffdch6.jpg",
     title: "Dictionary web app",
-    description:
-      "Dictionary web app - frontend mentor project made with React + Tailwindcss.",
+    description: "Dictionary web app made with React + Tailwindcss.",
     repository: "https://github.com/PiotrPlotast/dictionary-web-app",
     livePreview: "https://piotrplotast.github.io/dictionary-web-app/",
   },
   {
     image:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/xiydlw7ggmnfnldlflit.jpg",
-    title: "Clipboard landing page",
-    description:
-      "Clipboard landing page frontend mentor project using tailwindcss.",
-    repository: "https://github.com/PiotrPlotast/clipboard-landing-page",
-    livePreview: "https://piotrplotast.github.io/clipboard-landing-page/",
-  },
-  {
-    image:
-      "https://i.ibb.co/dmNdNqR/296444055-30f4e74c-ace2-4b0d-87f0-70fb7a45fab4.png",
-    title: "Interactive Eisenhower Matrix",
-    description:
-      "Interactive Eisenhower Matrix is a web app in which you can categorize, manage and save your tasks between sessions.",
-    repository: "https://github.com/PiotrPlotast/interactive-eisenhower-matrix",
-    livePreview:
-      "https://piotrplotast.github.io/interactive-eisenhower-matrix/",
+      "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/thcmrk07xdvnzf8qtay3.jpg",
+    title: "Job listings with filtering",
+    description: "Job listings with filtering made with React.",
+    repository: "https://github.com/PiotrPlotast/job-listings-with-filtering",
+    livePreview: "https://piotrplotast.github.io/job-listings-with-filtering/",
   },
   {
     image:
       "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/wwrbx1zs3x2wiferhyaw.jpg",
-    title: "(WIP) Typemaster pre launch landing page",
-    description: "Typemaster pre launch landing page frontend mentor project.",
+    title: "Typemaster pre launch landing page",
+    description: "Typemaster pre launch landing page made with HTML + SASS.",
     repository:
       "https://github.com/PiotrPlotast/typemaster-pre-launch-landing-page",
     livePreview:
@@ -70,7 +65,7 @@ export default function CarouselProjects() {
             <div className="max-w-[35rem] mx-auto">
               <img
                 src={project.image}
-                alt="image showing the project"
+                alt=""
                 className="mx-auto max-w-[90%] rounded-lg shadow-lg"
               />
               <h3 className="text-center py-4 font-bold text-xl">
